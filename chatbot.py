@@ -1,8 +1,8 @@
 from chatterbot import ChatBot
 import pyttsx
-
-#chatbot=ChatBot('Ron Obvious',trainer='chatterbot.trainer.ChatterBotCorpusTrainer')
-chatbot = ChatBot('Ron Obvious',trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
+#Initialize the corpus for taining
+chatbot = ChatBot('Cortona',trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
+#Train bot on english language words
 chatbot.train('chatterbot.corpus.english')
 while True:
 	ip=raw_input("Ask question or type exit :")
